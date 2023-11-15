@@ -6,15 +6,34 @@ import MainPage from '../../pages/main';
 import CartPage from '../../pages/cart';
 
 function App() {
-  const [selectedItemsIds, selectItemIds] = useState<number[] | []>([]);
+  const [selectedItemsIds, selectItemIds] = useState<number[]>([]);
+
+  const selectItem = (selectedId: number) => {
+    if (selectedItemsIds?.includes(selectedId)) {
+      const filtered = selectedItemsIds.filter((id) => selectedId === id);
+      selectItemIds(filtered);
+    } else {
+      selectItemIds((prev) => [...prev, selectedId]);
+    }
+  };
 
   return (
     <div className="App">
       <div className="App-wrapper">
         <Header />
         <Routes>
-          <Route index element={<MainPage />} />
-          <Route path="/cart" element={<CartPage />} />
+          <Route
+            element={
+              <MainPage selectItem={selectItem} selectedItemsIds={selectedItemsIds} />
+            }
+            index
+          />
+          <Route
+            path="/cart"
+            element={
+              <CartPage selectItem={selectItem} selectedItemsIds={selectedItemsIds} />
+            }
+          />
           <Route />
         </Routes>
       </div>
