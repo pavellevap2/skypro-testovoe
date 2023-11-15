@@ -1,5 +1,11 @@
+import Catalogue from '../components/catalogue/Catalogue';
+
 const MainPage = () => {
-  return <div>Основная страница</div>;
+  return (
+    <div>
+      <Catalogue />
+    </div>
+  );
 };
 
 export default MainPage;
