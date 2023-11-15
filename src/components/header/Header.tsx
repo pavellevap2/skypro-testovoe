@@ -1,5 +1,7 @@
+import './Header.scss';
+
 const Header = () => {
-  return <div></div>;
+  return <div className="Header">Интерьер.</div>;
 };
 
 export default Header;
