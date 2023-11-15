@@ -1,8 +1,38 @@
-.Header {
+.header {
     width: 100%;
     height: 76px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #CCC; 
+}
+
+.header-title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav-item {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+    &:first-child {
+        margin-right: 32px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
