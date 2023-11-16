@@ -4,4 +4,8 @@ export interface IProduct {
   description: string;
   price: number;
   pictureUrl: string;
+  min: number;
+  max: number;
 }
+
+export type ProductSortType = 'asc' | 'desc' | 'default';

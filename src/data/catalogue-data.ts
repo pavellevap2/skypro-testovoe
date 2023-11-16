@@ -14,6 +14,8 @@ export const CATALOGUE_DATA: IProduct[] = [
       'Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.',
     price: 120000,
     pictureUrl: Bed,
+    min: 1,
+    max: 5,
   },
   {
     id: 2,
@@ -22,6 +24,8 @@ export const CATALOGUE_DATA: IProduct[] = [
       'Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.',
     price: 21000,
     pictureUrl: Chair,
+    min: 1,
+    max: 5,
   },
   {
     id: 3,
@@ -29,6 +33,8 @@ export const CATALOGUE_DATA: IProduct[] = [
     description: 'Европейский дуб - отличается особой прочностью и стабильностью.',
     price: 34000,
     pictureUrl: Table,
+    min: 1,
+    max: 5,
   },
   {
     id: 4,
@@ -37,6 +43,8 @@ export const CATALOGUE_DATA: IProduct[] = [
       'Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать.',
     price: 68000,
     pictureUrl: Sofa,
+    min: 1,
+    max: 5,
   },
   {
     id: 5,
@@ -44,6 +52,8 @@ export const CATALOGUE_DATA: IProduct[] = [
     description: 'Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.',
     price: 40000,
     pictureUrl: Lunar,
+    min: 1,
+    max: 5,
   },
   {
     id: 6,
@@ -51,5 +61,7 @@ export const CATALOGUE_DATA: IProduct[] = [
     description: 'Мебель может быть оснащена разнообразными системами подсветки.',
     price: 80000,
     pictureUrl: Closet,
+    min: 1,
+    max: 5,
   },
 ];

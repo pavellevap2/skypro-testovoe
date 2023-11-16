@@ -4,5 +4,11 @@
 }
 
 .cart-item-row {
-    width: 100%;
+    display: flex;
+    width: calc(1200px - 379px - 33px);
+    height: fit-content;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 0.5px solid #CACDD8;
 }
+

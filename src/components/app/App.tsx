@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Header from '../header/Header';
-import MainPage from '../../pages/main';
-import CartPage from '../../pages/cart';
+import MainPage from '../../pages/MainPage';
+import CartPage from '../../pages/CartPage';
 
 function App() {
   const [selectedItemsIds, selectItemIds] = useState<number[]>([]);

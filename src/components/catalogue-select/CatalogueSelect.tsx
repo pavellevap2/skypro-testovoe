@@ -1,9 +1,10 @@
 import { FC } from 'react';
 import './CatalogueSelect.scss';
+import { ProductSortType } from '../../types/product';
 
 interface IProps {
-  sorting: 'asc' | 'desc' | 'default';
-  sortProducts: (sorting: 'asc' | 'desc' | 'default') => void;
+  sorting: ProductSortType;
+  sortProducts: (sorting: ProductSortType) => void;
 }
 
 const CatalogueSelect: FC<IProps> = ({ sorting, sortProducts }) => {
@@ -11,8 +12,7 @@ const CatalogueSelect: FC<IProps> = ({ sorting, sortProducts }) => {
     <div className="select-container">
       <select
         onChange={(e) => {
-          console.log(e.target.value, 'first click');
-          sortProducts(e.target.value as 'asc' | 'desc' | 'default');
+          sortProducts(e.target.value as ProductSortType);
         }}
         value={sorting}
       >

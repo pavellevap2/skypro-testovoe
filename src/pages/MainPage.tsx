@@ -1,15 +1,15 @@
 import { FC, useState } from 'react';
 import Catalogue from '../components/catalogue/Catalogue';
 import { ICart } from '../types/cart';
-import { IProduct } from '../types/product';
+import { IProduct, ProductSortType } from '../types/product';
 import { CATALOGUE_DATA } from '../data/catalogue-data';
 import CatalogueSelect from '../components/catalogue-select/CatalogueSelect';
 
 const MainPage: FC<ICart> = ({ selectItem }) => {
   const [products, setProducts] = useState<IProduct[]>(CATALOGUE_DATA);
-  const [sorting, setSorting] = useState<'asc' | 'desc' | 'default'>('default');
+  const [sorting, setSorting] = useState<ProductSortType>('default');
 
-  const sortProducts = (selectedSorting: 'asc' | 'desc' | 'default') => {
+  const sortProducts = (selectedSorting: ProductSortType) => {
     if (selectedSorting === 'desc') {
       const sorted = [...CATALOGUE_DATA]?.sort((a, b) => b.price - a.price);
 
