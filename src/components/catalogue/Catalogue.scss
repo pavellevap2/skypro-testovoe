@@ -1,3 +1,5 @@
+@import 'src/styles/typography';
+
 .catalogue {
     margin-top: 35px;
     display: grid;
@@ -19,19 +21,11 @@
 } 
 
 .catalogue-item-text {
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 7px;
+    @include item-text;
 }   
 
 .catalogue-item-description {
-    color: #888;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 13px;
+    @include item-description;
 }  
 
 

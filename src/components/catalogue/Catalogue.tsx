@@ -22,7 +22,7 @@ const Catalogue: FC<Props> = ({ selectItem, products }) => {
             />
             <div className="catalogue-item-text">{item.title}</div>
             <div className="catalogue-item-description">{item.description}</div>
-            <div className="catalogue-item-text">{`${price} руб.`}</div>
+            <div className="catalogue-item-price">{`${price} руб.`}</div>
           </div>
         );
       })}

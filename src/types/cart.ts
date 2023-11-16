@@ -1,4 +1,4 @@
 export interface ICart {
-  selectedItemsIds: number[] | [];
+  selectedItemsIds: number[];
   selectItem: (id: number) => void;
 }
