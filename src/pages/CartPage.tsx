@@ -39,9 +39,27 @@ const CartPage: FC<ICart> = ({ selectedItemsIds }) => {
     setCheckin((prev) => ({ ...prev, [id]: value }));
   };
 
+  const finalPrice = useMemo(() => {
+    let total = 0;
+
+    for (const product of CATALOGUE_DATA) {
+      if (checkin[product.id]) {
+        const count = checkin[product.id];
+        total += count * product.price;
+      }
+    }
+
+    return total;
+  }, [checkin]);
+
   return (
     <main>
-      <Cart addToCart={addToCart} checkin={checkin} products={productItems} />
+      <Cart
+        finalPrice={finalPrice}
+        addToCart={addToCart}
+        checkin={checkin}
+        products={productItems}
+      />
     </main>
   );
 };

@@ -9,9 +9,10 @@ interface Props {
     [key: number]: number;
   };
   addToCart: (id: number, value: number) => void;
+  finalPrice: number;
 }
 
-const Cart: FC<Props> = ({ checkin, products, addToCart }) => {
+const Cart: FC<Props> = ({ checkin, products, addToCart, finalPrice }) => {
   return (
     <div className="cart-container">
       <div className="cart-col">
@@ -47,7 +48,7 @@ const Cart: FC<Props> = ({ checkin, products, addToCart }) => {
           );
         })}
       </div>
-      <CartForm />
+      <CartForm finalPrice={finalPrice} />
     </div>
   );
 };

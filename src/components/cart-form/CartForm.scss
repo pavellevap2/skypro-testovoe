@@ -1,7 +1,63 @@
+@import 'src/styles/typography';
+
+
 .cart-form-container {
     width: 379px;
     height: 556px;
     border-radius: 20px;
     background: #F7F6F6;
     margin-left: 33px;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.cart-form-title {
+    margin-top: 32px;
+    margin-bottom: 35px;
+    text-align: center;
+
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+}   
+
+.cart-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 28px;
+
+    input {
+        width: 288px;
+        margin-bottom: 41px;
+        border:none;
+        border-bottom: 1px solid #CACDD8;
+        color: black;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background: transparent;
+
+        &::placeholder {
+            color: black;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+}
+
+.cart-form-price {
+    margin-top: 21px;
+    @include item-text;
+    text-align: center;
+
+    span {
+        font-weight: 500;
+    }
 }
