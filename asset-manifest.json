@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/skypro-testovoe/static/css/main.a8d7656c.css",
-    "main.js": "/skypro-testovoe/static/js/main.a8c0955b.js",
-    "static/media/chair-lunar.png": "/skypro-testovoe/static/media/chair-lunar.fa91e6953395276edea9.png",
-    "static/media/table.png": "/skypro-testovoe/static/media/table.d178ade0dc788f7f3a37.png",
-    "static/media/closet.png": "/skypro-testovoe/static/media/closet.a27ae33ba6aa1811a214.png",
-    "static/media/sofa.png": "/skypro-testovoe/static/media/sofa.dc6e4deab6775f818abd.png",
-    "static/media/chair.png": "/skypro-testovoe/static/media/chair.8869cbe7e388e29496c1.png",
-    "static/media/bed.png": "/skypro-testovoe/static/media/bed.c8ee5e4013ff60b6df10.png",
-    "index.html": "/skypro-testovoe/index.html",
-    "main.a8d7656c.css.map": "/skypro-testovoe/static/css/main.a8d7656c.css.map",
-    "main.a8c0955b.js.map": "/skypro-testovoe/static/js/main.a8c0955b.js.map"
+    "main.css": "/static/css/main.a8d7656c.css",
+    "main.js": "/static/js/main.63118954.js",
+    "static/media/chair-lunar.png": "/static/media/chair-lunar.fa91e6953395276edea9.png",
+    "static/media/table.png": "/static/media/table.d178ade0dc788f7f3a37.png",
+    "static/media/closet.png": "/static/media/closet.a27ae33ba6aa1811a214.png",
+    "static/media/sofa.png": "/static/media/sofa.dc6e4deab6775f818abd.png",
+    "static/media/chair.png": "/static/media/chair.8869cbe7e388e29496c1.png",
+    "static/media/bed.png": "/static/media/bed.c8ee5e4013ff60b6df10.png",
+    "index.html": "/index.html",
+    "main.a8d7656c.css.map": "/static/css/main.a8d7656c.css.map",
+    "main.63118954.js.map": "/static/js/main.63118954.js.map"
   },
   "entrypoints": [
     "static/css/main.a8d7656c.css",
-    "static/js/main.a8c0955b.js"
+    "static/js/main.63118954.js"
   ]
 }
